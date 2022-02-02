@@ -1,6 +1,7 @@
 import Image from 'next/image'
 
 import styles from '../../styles/Pokemon.module.css'
+import Loading from '../../components/Loading'
 
 import { useRouter } from 'next/router'
 
@@ -42,7 +43,7 @@ export default function Pokemon({ pokemon }) {
     const router = useRouter()
 
     if (router.isFallback) {
-        return <div>Carregando...</div>
+        return <Loading />
     }
 
     return (

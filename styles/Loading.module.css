@@ -1,0 +1,17 @@
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 55vh;
+}
+
+.title {
+    padding-top: 1em;
+    color: #333;
+    font-size: 2em;
+}
+
+.title span {
+    color: #e33d33;
+}
