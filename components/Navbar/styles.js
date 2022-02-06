@@ -1,4 +1,6 @@
-.navbar {
+import styled from "styled-components";
+
+export const Container = styled.nav`
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -6,39 +8,34 @@
     margin-bottom: 2em;
     background-color: #333;
     color: #fff;
-}
+`
 
-.logo {
+export const Logo = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-}
+`
 
-.logo h1 {
+export const Title = styled.h1`
     margin-left: 0.5em;
-}
+`
 
-.link_items {
+export const UnorderedList = styled.ul`
     display: flex;
     list-style: none;
-}
+`
 
-.link_items li {
+export const ListItem = styled.li`
     margin-right: 1.3em;
-}
+`
 
-.link_items a {
+export const LinkStyle = styled.a`
     color: #FFF;
     text-decoration: none;
     padding: 5px;
     transition: .4s;
     border-bottom: 2px solid transparent;
-}
-
-.link_items a:hover {
-    border-color: #FFF;
-}
-
-.link_items a:hover {
-    border-color: #FFF;
-}
+    &:hover {
+        border-color: #FFF;
+    }
+`
