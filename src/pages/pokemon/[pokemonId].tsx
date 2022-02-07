@@ -1,6 +1,7 @@
 import Pokemon from '../../templates/Pokemon'
+import { GetStaticProps, GetStaticPaths } from 'next'
 
-export const getStaticPaths = async () => {
+export const getStaticPaths: GetStaticPaths = async () => {
 
     const maxPokemons = 251
     const api = 'https://pokeapi.co/api/v2/pokemon/'
@@ -21,7 +22,7 @@ export const getStaticPaths = async () => {
     }
 }
 
-export const getStaticProps = async (context) => {
+export const getStaticProps: GetStaticProps = async (context) => {
 
     const id = context.params.pokemonId
 

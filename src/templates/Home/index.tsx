@@ -4,7 +4,11 @@ import { Container, Title, ColorSpan, PokeContainer } from './styles'
 
 import Card from '../../../components/Card/index'
 
-export default function Home(props) {
+export interface IHomeProps {
+    pokemons: any
+}
+
+export default function Home(props:IHomeProps) {
     const pokemons = props.pokemons
     
     return (

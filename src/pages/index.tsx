@@ -1,7 +1,7 @@
-import Home from '../templates/Home'
+import Home from '../templates/Home/index'
+import { GetStaticProps } from 'next'
 
-export async function getStaticProps() {
-
+export const getStaticProps: GetStaticProps = async () => {
   const maxPokemons = 251
   const api = 'https://pokeapi.co/api/v2/pokemon/'
 
