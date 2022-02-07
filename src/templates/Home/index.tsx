@@ -1,8 +1,6 @@
 import Image from 'next/image';
-
 import { Container, Title, ColorSpan, PokeContainer } from './styles'
-
-import Card from '../../../components/Card/index'
+import Card from '../../components/Card/index';
 
 export interface IHomeProps {
     pokemons: any

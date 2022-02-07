@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import Loading from '../../../components/Loading/index'
+import Loading from '../../components/Loading/index'
 import { Container, Title, DivElement, TitleSection, Paragraph, ContainerTypes, ContainerData, DataWeight, DataHeight, TitleAttributes, SpanResults } from './styles'
 
 import { useRouter } from 'next/router'

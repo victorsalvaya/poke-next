@@ -1,5 +1,5 @@
-import Home from '../templates/Home/index'
-import { GetStaticProps } from 'next'
+import Home from '../templates/Home/index';
+import { GetStaticProps } from 'next';
 
 export const getStaticProps: GetStaticProps = async () => {
   const maxPokemons = 251
