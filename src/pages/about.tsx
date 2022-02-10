@@ -1,9 +1,11 @@
 import About from '../templates/About';
 
-export default function AboutPage() {
+export const AboutPage: React.FC = () => {
     return (
         <>
             <About />
         </>
     )
 }
+
+export default AboutPage

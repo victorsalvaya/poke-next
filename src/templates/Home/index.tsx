@@ -2,11 +2,7 @@ import Image from 'next/image';
 import { Container, Title, ColorSpan, PokeContainer } from './styles'
 import Card from '../../components/Card/index';
 
-export interface IHomeProps {
-    pokemons: any
-}
-
-export default function Home(props:IHomeProps) {
+export const Home: React.FC<any> = (props) =>{
     const pokemons = props.pokemons
     
     return (
@@ -23,3 +19,6 @@ export default function Home(props:IHomeProps) {
         </>
     )
 }
+
+
+export default Home

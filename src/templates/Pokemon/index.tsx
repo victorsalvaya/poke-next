@@ -1,10 +1,11 @@
 import Image from 'next/image'
 import Loading from '../../components/Loading/index'
 import { Container, Title, DivElement, TitleSection, Paragraph, ContainerTypes, ContainerData, DataWeight, DataHeight, TitleAttributes, SpanResults } from './styles'
-
 import { useRouter } from 'next/router'
+import { PokemonProps } from '../../types/PokeProps'
 
-export default function Pokemon(props) {
+
+export const Pokemon: React.FC<PokemonProps> = (props) => {
     const pokemon = props.pokemon
     const router = useRouter()
 
@@ -46,3 +47,5 @@ export default function Pokemon(props) {
         </Container>
     )
 }
+
+export default Pokemon

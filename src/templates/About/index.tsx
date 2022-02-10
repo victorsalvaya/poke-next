@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { Container, Title, Paragraph } from './styles';
 
-export default function About() {
+export const About: React.FC = () => {
     return (
         <Container>
             <Title>Sobre o projeto</Title>
@@ -12,3 +12,5 @@ export default function About() {
         </Container>
     )
 }
+
+export default About

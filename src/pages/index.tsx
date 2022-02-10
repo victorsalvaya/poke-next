@@ -10,7 +10,7 @@ export const getStaticProps: GetStaticProps = async () => {
 
   // add pokemon index
 
-  data.results.forEach((item, index) => {
+  data.results.forEach((item: any, index: number) => {
     item.id = index + 1
   })
 
